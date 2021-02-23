@@ -6,24 +6,28 @@ class Hippotamus {
     }
     toString() {
         console.log('Hippotamus ', this.name, ' weight ', this.weight, 'kg and has tusks of ', this.tuskSize, 'cm');
+        return ``;
     }
     swim() {
-        this.weight = this.weight - (0.3);
+        return `${this.weight}` = `${this.weight}` - (0.3);
         // console.log(this.weight);
     }
     eat() {
-        this.weight++;
+        return `${this.weight}`++;
         //    console.log(this.weight);
     }
 
     fight(Hippotamus) {
         if (this.tuskSize && Hippotamus.tuskSize == 0) {
-            console.log('Tusksize cant be negative')
+            // console.log('Tusksize cant be negative');
+            return 'Tusksize cant be negative';
         }
         else if (this.tuskSize > Hippotamus.tuskSize) {
-            console.log(this.name, 'won');
+            // console.log(this.name, 'won');
+            return `${this.name}`, 'won';
         } else {
-            console.log(Hippotamus.name, 'won');
+            // console.log(Hippotamus.name, 'won');
+            return `${Hippotamus.name}`, 'won';
         }
     }
 }
@@ -40,6 +44,6 @@ for (t = 0; t < 21; t++) {
     for (i = 0; i < 15; i++) {
         hippo1.eat() * 2 + hippo1.swim() * 3;
     }
-    console.log('A la fin de la journée ', t+1, '', hippo1.name, 'pese ', hippo1.weight, 'kg');
+    console.log('A la fin de la journée ', t + 1, '', hippo1.name, 'pese ', hippo1.weight, 'kg');
 }
 console.log('A la fin des 3 semaines ', hippo1.name, 'pese ', hippo1.weight, 'kg')
