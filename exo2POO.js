@@ -9,14 +9,13 @@ class Point {
     }
     setX(x) {
         this.membreX = x;
-        return `${this.membreX}`;
     }
     getY() {
         return `${this.membreY}`;
     }
 
-    setX(y) {
-        return `${this.membreY}=${y}`;
+    setY(y) {
+        this.membreY = y;
     }
 
     toString() {
@@ -25,5 +24,6 @@ class Point {
 }
 
 var pointA = new Point(2, 1);
-console.log(pointA.setX(5));
+console.log(pointA.toString());
+pointA.setX(4);
 console.log(pointA.toString());
