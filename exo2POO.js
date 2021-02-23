@@ -27,3 +27,5 @@ var pointA = new Point(2, 1);
 console.log(pointA.toString());
 pointA.setX(4);
 console.log(pointA.toString());
+
+module.exports = Point;
